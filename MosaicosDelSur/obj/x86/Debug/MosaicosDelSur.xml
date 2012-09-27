@@ -1,0 +1,596 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+MosaicosDelSur
+</name>
+</assembly>
+<members>
+<member name="T:MosaicosDelSur.dsSeguridad.UsuariosDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:MosaicosDelSur.dsSeguridad.LogDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:MosaicosDelSur.dsSeguridad.ModulosDisponiblesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:MosaicosDelSur.dsSeguridad.ModulosAsignadosDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:MosaicosDelSur.dsSeguridad.ModulosDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:MosaicosDelSur.dsSeguridad.DetalleUsuarioModulosDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:MosaicosDelSur.dsSeguridad.UsuariosRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:MosaicosDelSur.dsSeguridad.LogRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:MosaicosDelSur.dsSeguridad.ModulosDisponiblesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:MosaicosDelSur.dsSeguridad.ModulosAsignadosRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:MosaicosDelSur.dsSeguridad.ModulosRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:MosaicosDelSur.dsSeguridad.DetalleUsuarioModulosRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:MosaicosDelSur.dsSeguridad.UsuariosRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:MosaicosDelSur.dsSeguridad.LogRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:MosaicosDelSur.dsSeguridad.ModulosDisponiblesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:MosaicosDelSur.dsSeguridad.ModulosAsignadosRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:MosaicosDelSur.dsSeguridad.ModulosRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:MosaicosDelSur.dsSeguridad.DetalleUsuarioModulosRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:MosaicosDelSur.dsSeguridad">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:MosaicosDelSur.dsSeguridadTableAdapters.UsuariosTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:MosaicosDelSur.dsSeguridadTableAdapters.LogTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:MosaicosDelSur.dsSeguridadTableAdapters.ModulosDisponiblesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:MosaicosDelSur.dsSeguridadTableAdapters.ModulosAsignadosTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:MosaicosDelSur.dsSeguridadTableAdapters.ModulosTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:MosaicosDelSur.dsSeguridadTableAdapters.DetalleUsuarioModulosTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:MosaicosDelSur.dsSeguridadTableAdapters.TableAdapterManager.UpdateUpdatedRows(MosaicosDelSur.dsSeguridad,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:MosaicosDelSur.dsSeguridadTableAdapters.TableAdapterManager.UpdateInsertedRows(MosaicosDelSur.dsSeguridad,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:MosaicosDelSur.dsSeguridadTableAdapters.TableAdapterManager.UpdateDeletedRows(MosaicosDelSur.dsSeguridad,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:MosaicosDelSur.dsSeguridadTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:MosaicosDelSur.dsSeguridadTableAdapters.TableAdapterManager.UpdateAll(MosaicosDelSur.dsSeguridad)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:MosaicosDelSur.dsSeguridadTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:MosaicosDelSur.dsSeguridadTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:MosaicosDelSur.dsSeguridadTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:MosaicosDelSur.dsCatalogos.TamaniosDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:MosaicosDelSur.dsCatalogos.EmpleadosDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:MosaicosDelSur.dsCatalogos.ProductosDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:MosaicosDelSur.dsCatalogos.ClientesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:MosaicosDelSur.dsCatalogos.EntregadorDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:MosaicosDelSur.dsCatalogos.EstadoOrdenTrabajoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:MosaicosDelSur.dsCatalogos.NombreProductoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:MosaicosDelSur.dsCatalogos.DatosGeneralesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:MosaicosDelSur.dsCatalogos.LocacionesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:MosaicosDelSur.dsCatalogos.EmpleadosNombreCompletoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:MosaicosDelSur.dsCatalogos.TamaniosRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:MosaicosDelSur.dsCatalogos.EmpleadosRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:MosaicosDelSur.dsCatalogos.ProductosRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:MosaicosDelSur.dsCatalogos.ClientesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:MosaicosDelSur.dsCatalogos.EntregadorRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:MosaicosDelSur.dsCatalogos.EstadoOrdenTrabajoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:MosaicosDelSur.dsCatalogos.NombreProductoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:MosaicosDelSur.dsCatalogos.DatosGeneralesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:MosaicosDelSur.dsCatalogos.LocacionesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:MosaicosDelSur.dsCatalogos.EmpleadosNombreCompletoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:MosaicosDelSur.dsCatalogos.TamaniosRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:MosaicosDelSur.dsCatalogos.EmpleadosRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:MosaicosDelSur.dsCatalogos.ProductosRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:MosaicosDelSur.dsCatalogos.ClientesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:MosaicosDelSur.dsCatalogos.EntregadorRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:MosaicosDelSur.dsCatalogos.EstadoOrdenTrabajoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:MosaicosDelSur.dsCatalogos.NombreProductoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:MosaicosDelSur.dsCatalogos.DatosGeneralesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:MosaicosDelSur.dsCatalogos.LocacionesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:MosaicosDelSur.dsCatalogos.EmpleadosNombreCompletoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:MosaicosDelSur.dsCatalogos">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:MosaicosDelSur.dsCatalogosTableAdapters.TamaniosTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:MosaicosDelSur.dsCatalogosTableAdapters.EmpleadosTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:MosaicosDelSur.dsCatalogosTableAdapters.ProductosTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:MosaicosDelSur.dsCatalogosTableAdapters.ClientesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:MosaicosDelSur.dsCatalogosTableAdapters.EntregadorTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:MosaicosDelSur.dsCatalogosTableAdapters.EstadoOrdenTrabajoTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:MosaicosDelSur.dsCatalogosTableAdapters.NombreProductoTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:MosaicosDelSur.dsCatalogosTableAdapters.DatosGeneralesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:MosaicosDelSur.dsCatalogosTableAdapters.LocacionesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:MosaicosDelSur.dsCatalogosTableAdapters.EmpleadosNombreCompletoTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:MosaicosDelSur.dsCatalogosTableAdapters.TableAdapterManager.UpdateUpdatedRows(MosaicosDelSur.dsCatalogos,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:MosaicosDelSur.dsCatalogosTableAdapters.TableAdapterManager.UpdateInsertedRows(MosaicosDelSur.dsCatalogos,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:MosaicosDelSur.dsCatalogosTableAdapters.TableAdapterManager.UpdateDeletedRows(MosaicosDelSur.dsCatalogos,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:MosaicosDelSur.dsCatalogosTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:MosaicosDelSur.dsCatalogosTableAdapters.TableAdapterManager.UpdateAll(MosaicosDelSur.dsCatalogos)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:MosaicosDelSur.dsCatalogosTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:MosaicosDelSur.dsCatalogosTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:MosaicosDelSur.dsCatalogosTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="P:MosaicosDelSur.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:MosaicosDelSur.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:MosaicosDelSur.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="T:MosaicosDelSur.dsProcesos.DetalleFacturaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:MosaicosDelSur.dsProcesos.OrdenesTrabajoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:MosaicosDelSur.dsProcesos.DetalleOrdenTrabajoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:MosaicosDelSur.dsProcesos.ListadoFacturasDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:MosaicosDelSur.dsProcesos.ListadoOrdenesTrabajoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:MosaicosDelSur.dsProcesos.DetalleCotizacionDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:MosaicosDelSur.dsProcesos.CotizacionesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:MosaicosDelSur.dsProcesos.ListadoCotizacionesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:MosaicosDelSur.dsProcesos.RecibosDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:MosaicosDelSur.dsProcesos.ArqueoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:MosaicosDelSur.dsProcesos.FacturasDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:MosaicosDelSur.dsProcesos.RecibosFacturasDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:MosaicosDelSur.dsProcesos.RecibosOrdenesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:MosaicosDelSur.dsProcesos.DetalleFacturaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:MosaicosDelSur.dsProcesos.OrdenesTrabajoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:MosaicosDelSur.dsProcesos.DetalleOrdenTrabajoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:MosaicosDelSur.dsProcesos.ListadoFacturasRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:MosaicosDelSur.dsProcesos.ListadoOrdenesTrabajoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:MosaicosDelSur.dsProcesos.DetalleCotizacionRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:MosaicosDelSur.dsProcesos.CotizacionesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:MosaicosDelSur.dsProcesos.ListadoCotizacionesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:MosaicosDelSur.dsProcesos.RecibosRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:MosaicosDelSur.dsProcesos.ArqueoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:MosaicosDelSur.dsProcesos.FacturasRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:MosaicosDelSur.dsProcesos.RecibosFacturasRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:MosaicosDelSur.dsProcesos.RecibosOrdenesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:MosaicosDelSur.dsProcesos.DetalleFacturaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:MosaicosDelSur.dsProcesos.OrdenesTrabajoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:MosaicosDelSur.dsProcesos.DetalleOrdenTrabajoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:MosaicosDelSur.dsProcesos.ListadoFacturasRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:MosaicosDelSur.dsProcesos.ListadoOrdenesTrabajoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:MosaicosDelSur.dsProcesos.DetalleCotizacionRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:MosaicosDelSur.dsProcesos.CotizacionesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:MosaicosDelSur.dsProcesos.ListadoCotizacionesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:MosaicosDelSur.dsProcesos.RecibosRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:MosaicosDelSur.dsProcesos.ArqueoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:MosaicosDelSur.dsProcesos.FacturasRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:MosaicosDelSur.dsProcesos.RecibosFacturasRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:MosaicosDelSur.dsProcesos.RecibosOrdenesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:MosaicosDelSur.dsProcesos">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:MosaicosDelSur.dsProcesosTableAdapters.DetalleFacturaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:MosaicosDelSur.dsProcesosTableAdapters.OrdenesTrabajoTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:MosaicosDelSur.dsProcesosTableAdapters.DetalleOrdenTrabajoTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:MosaicosDelSur.dsProcesosTableAdapters.ListadoFacturasTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:MosaicosDelSur.dsProcesosTableAdapters.ListadoOrdenesTrabajoTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:MosaicosDelSur.dsProcesosTableAdapters.DetalleCotizacionTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:MosaicosDelSur.dsProcesosTableAdapters.CotizacionesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:MosaicosDelSur.dsProcesosTableAdapters.ListadoCotizacionesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:MosaicosDelSur.dsProcesosTableAdapters.RecibosTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:MosaicosDelSur.dsProcesosTableAdapters.ArqueoTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:MosaicosDelSur.dsProcesosTableAdapters.FacturasTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:MosaicosDelSur.dsProcesosTableAdapters.RecibosFacturasTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:MosaicosDelSur.dsProcesosTableAdapters.RecibosOrdenesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:MosaicosDelSur.dsProcesosTableAdapters.TableAdapterManager.UpdateUpdatedRows(MosaicosDelSur.dsProcesos,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:MosaicosDelSur.dsProcesosTableAdapters.TableAdapterManager.UpdateInsertedRows(MosaicosDelSur.dsProcesos,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:MosaicosDelSur.dsProcesosTableAdapters.TableAdapterManager.UpdateDeletedRows(MosaicosDelSur.dsProcesos,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:MosaicosDelSur.dsProcesosTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:MosaicosDelSur.dsProcesosTableAdapters.TableAdapterManager.UpdateAll(MosaicosDelSur.dsProcesos)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:MosaicosDelSur.dsProcesosTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:MosaicosDelSur.dsProcesosTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:MosaicosDelSur.dsProcesosTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+</members>
+</doc>

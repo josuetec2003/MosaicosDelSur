@@ -1,0 +1,560 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{909BF5E0-3677-45AC-A6CE-2F60B44F084D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Sub Main</StartupObject>
+    <RootNamespace>MosaicosDelSur</RootNamespace>
+    <AssemblyName>MosaicosDelSur</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>MosaicosDelSur.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>MosaicosDelSur.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v10.1, Version=10.1.5.0, Culture=neutral, PublicKeyToken=940cfcde86f32efd, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.OfficeSkins.v10.1, Version=10.1.5.0, Culture=neutral, PublicKeyToken=940cfcde86f32efd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\DevExpress 2010.1\Components\Sources\DevExpress.DLL\DevExpress.OfficeSkins.v10.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v10.1, Version=10.1.5.0, Culture=neutral, PublicKeyToken=940cfcde86f32efd, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v10.1, Version=10.1.5.0, Culture=neutral, PublicKeyToken=940cfcde86f32efd, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v10.1, Version=10.1.5.0, Culture=neutral, PublicKeyToken=940cfcde86f32efd, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v10.1, Version=10.1.5.0, Culture=neutral, PublicKeyToken=940cfcde86f32efd, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v10.1, Version=10.1.5.0, Culture=neutral, PublicKeyToken=940cfcde86f32efd" />
+    <Reference Include="DevExpress.XtraPrinting.v10.1, Version=10.1.5.0, Culture=neutral, PublicKeyToken=940cfcde86f32efd, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v10.1, Version=10.1.5.0, Culture=neutral, PublicKeyToken=940cfcde86f32efd" />
+    <Reference Include="DevExpress.XtraTreeList.v10.1, Version=10.1.5.0, Culture=neutral, PublicKeyToken=940cfcde86f32efd" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Datasets\dsCatalogos.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCatalogos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\dsProcesos.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsProcesos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\dsProcesos.vb">
+      <DependentUpon>dsProcesos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\dsSeguridad.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsSeguridad.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Catalogos\frmAddClientes.Designer.vb">
+      <DependentUpon>frmAddClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Catalogos\frmAddClientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Catalogos\frmListadoClientes.Designer.vb">
+      <DependentUpon>frmListadoClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Catalogos\frmListadoClientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Catalogos\frmListadoProductos.Designer.vb">
+      <DependentUpon>frmListadoProductos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Catalogos\frmListadoProductos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Catalogos\frmAddEmpleado.Designer.vb">
+      <DependentUpon>frmAddEmpleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Catalogos\frmAddEmpleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Catalogos\frmAddProductos.Designer.vb">
+      <DependentUpon>frmAddProductos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Catalogos\frmAddProductos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Catalogos\frmTamanios.Designer.vb">
+      <DependentUpon>frmTamanios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Catalogos\frmTamanios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Catalogos\XtraForm1.Designer.vb">
+      <DependentUpon>frmListadoEmpleados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Catalogos\frmListadoEmpleados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\DatosGenerales\frmDatosEmpresa.Designer.vb">
+      <DependentUpon>frmDatosEmpresa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\DatosGenerales\frmDatosEmpresa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Listados\frmDialogClientes.Designer.vb">
+      <DependentUpon>frmDialogClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Listados\frmDialogClientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Listados\frmDialogEmpleados.Designer.vb">
+      <DependentUpon>frmDialogEmpleados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Listados\frmDialogEmpleados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Listados\frmDialogFacturas.Designer.vb">
+      <DependentUpon>frmDialogFacturas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Listados\frmDialogFacturas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Listados\frmDialogOrdenes.Designer.vb">
+      <DependentUpon>frmDialogOrdenes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Listados\frmDialogOrdenes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Listados\frmDialogProductos.Designer.vb">
+      <DependentUpon>frmDialogProductos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Listados\frmDialogProductos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Procesos\frmColectaDiaria.Designer.vb">
+      <DependentUpon>frmColectaDiaria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Procesos\frmColectaDiaria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Procesos\frmCotizacion.Designer.vb">
+      <DependentUpon>frmCotizacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Procesos\frmCotizacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Procesos\frmFacturar.Designer.vb">
+      <DependentUpon>frmFacturar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Procesos\frmFacturar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Procesos\frmListadoFacturas.Designer.vb">
+      <DependentUpon>frmListadoFacturas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Procesos\frmListadoFacturas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Procesos\frmListadoOrdenesTrabajo.Designer.vb">
+      <DependentUpon>frmListadoOrdenesTrabajo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Procesos\frmListadoOrdenesTrabajo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Procesos\frmListadoRecibos.Designer.vb">
+      <DependentUpon>frmListadoRecibos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Procesos\frmListadoRecibos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Procesos\frmOrdenesTrabajo.Designer.vb">
+      <DependentUpon>frmOrdenesTrabajo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Procesos\frmOrdenesTrabajo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\RFrmPrincipal.Designer.vb">
+      <DependentUpon>RFrmPrincipal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\RFrmPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Seguridad\frmCambiarPass.Designer.vb">
+      <DependentUpon>frmCambiarPass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Seguridad\frmCambiarPass.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Seguridad\frmComprobarCredenciales.Designer.vb">
+      <DependentUpon>frmComprobarCredenciales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Seguridad\frmComprobarCredenciales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Seguridad\frmListadoUsuarios.Designer.vb">
+      <DependentUpon>frmListadoUsuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Seguridad\frmListadoUsuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Seguridad\frmPermisos.Designer.vb">
+      <DependentUpon>frmPermisos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Seguridad\frmPermisos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Seguridad\frmUsuario.Designer.vb">
+      <DependentUpon>frmUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Seguridad\frmUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Seguridad\xfrmLogin.Designer.vb">
+      <DependentUpon>xfrmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Seguridad\xfrmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModulosYFunciones\ModuleFunciones.vb" />
+    <Compile Include="ModulosYFunciones\ModuleInicio.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Formularios\Catalogos\frmAddClientes.resx">
+      <DependentUpon>frmAddClientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Catalogos\frmListadoClientes.resx">
+      <DependentUpon>frmListadoClientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Catalogos\frmListadoEmpleados.resx">
+      <DependentUpon>frmListadoEmpleados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Catalogos\frmListadoProductos.resx">
+      <DependentUpon>frmListadoProductos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Catalogos\frmAddEmpleado.resx">
+      <DependentUpon>frmAddEmpleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Catalogos\frmAddProductos.resx">
+      <DependentUpon>frmAddProductos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Catalogos\frmTamanios.resx">
+      <DependentUpon>frmTamanios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\DatosGenerales\frmDatosEmpresa.resx">
+      <DependentUpon>frmDatosEmpresa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Listados\frmDialogClientes.resx">
+      <DependentUpon>frmDialogClientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Listados\frmDialogEmpleados.resx">
+      <DependentUpon>frmDialogEmpleados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Listados\frmDialogFacturas.resx">
+      <DependentUpon>frmDialogFacturas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Listados\frmDialogOrdenes.resx">
+      <DependentUpon>frmDialogOrdenes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Listados\frmDialogProductos.resx">
+      <DependentUpon>frmDialogProductos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Procesos\frmColectaDiaria.resx">
+      <DependentUpon>frmColectaDiaria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Procesos\frmCotizacion.resx">
+      <DependentUpon>frmCotizacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Procesos\frmFacturar.resx">
+      <DependentUpon>frmFacturar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Procesos\frmListadoFacturas.resx">
+      <DependentUpon>frmListadoFacturas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Procesos\frmListadoOrdenesTrabajo.resx">
+      <DependentUpon>frmListadoOrdenesTrabajo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Procesos\frmListadoRecibos.resx">
+      <DependentUpon>frmListadoRecibos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Procesos\frmOrdenesTrabajo.resx">
+      <DependentUpon>frmOrdenesTrabajo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\RFrmPrincipal.resx">
+      <DependentUpon>RFrmPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Seguridad\frmCambiarPass.resx">
+      <DependentUpon>frmCambiarPass.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Seguridad\frmComprobarCredenciales.resx">
+      <DependentUpon>frmComprobarCredenciales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Seguridad\frmListadoUsuarios.resx">
+      <DependentUpon>frmListadoUsuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Seguridad\frmPermisos.resx">
+      <DependentUpon>frmPermisos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Seguridad\frmUsuario.resx">
+      <DependentUpon>frmUsuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Seguridad\xfrmLogin.resx">
+      <DependentUpon>xfrmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Datasets\dsCatalogos.xsc">
+      <DependentUpon>dsCatalogos.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\dsCatalogos.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCatalogos.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Datasets\dsCatalogos.xss">
+      <DependentUpon>dsCatalogos.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\dsProcesos.xsc">
+      <DependentUpon>dsProcesos.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\dsProcesos.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsProcesos.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Datasets\dsProcesos.xss">
+      <DependentUpon>dsProcesos.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\dsSeguridad.xsc">
+      <DependentUpon>dsSeguridad.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\dsSeguridad.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsSeguridad.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Datasets\dsSeguridad.xss">
+      <DependentUpon>dsSeguridad.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Reportes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\espacio-azul.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ceo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\door_out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\layer_grid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application_view_detail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\basket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_blondy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_as.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addnew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancelnew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnifier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_silhouette.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_flat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_flat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\layer_to_image_size.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\company.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cash_register.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\work_order.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\quote.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lists.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\work order.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\work_order16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chart_bar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application_view_list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_permission.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\padlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pencil1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key_go.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bomb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\information.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,41 @@
+FillByConExistencia
+	SELECT IdProducto, Nombre, IdTamanio, PrecioUnitario, UnidadesEnStock, Descontinuado 
+	FROM dbo.Productos
+	WHERE UnidadesEnStock <> 0
+
+FillBySinExistencia
+	SELECT IdProducto, Nombre, IdTamanio, PrecioUnitario, UnidadesEnStock, Descontinuado 
+	FROM dbo.Productos
+	WHERE UnidadesEnStock = 0
+
+FillByIdProducto
+	SELECT IdProducto, Nombre, IdTamanio, PrecioUnitario, UnidadesEnStock, Descontinuado 
+	FROM dbo.Productos
+	WHERE IdProducto = @IdProducto
+
+FillByNombre
+	SELECT IdProducto, Nombre, IdTamanio, PrecioUnitario, UnidadesEnStock, Descontinuado 
+	FROM dbo.Productos
+	WHERE Nombre LIKE @Nombre
+
+FillByNombreConExistencia
+	SELECT IdProducto, Nombre, IdTamanio, PrecioUnitario, UnidadesEnStock, Descontinuado 
+	FROM dbo.Productos
+	WHERE UnidadesEnStock <> 0 AND Nombre LIKE @Nombre
+
+FillByNombreSinExistencia
+	SELECT IdProducto, Nombre, IdTamanio, PrecioUnitario, UnidadesEnStock, Descontinuado 
+	FROM dbo.Productos
+	WHERE UnidadesEnStock = 0 AND Nombre LIKE @Nombre
+
+FillByTamanio
+	SELECT IdProducto, Nombre, IdTamanio, PrecioUnitario, UnidadesEnStock, Descontinuado 
+	FROM dbo.Productos
+	WHERE IdTamanio = @Tamanio
+
+UpdateIdProducto
+	UPDATE Productos SET Nombre = @Nombre, IdTamanio = @IdTamanio, PrecioUnitario = @PrecioUnitario, UnidadesEnStock = @UnidadesEnStock, Descontinuado = @Descontinuado 
+	WHERE IdProducto = @IdProducto
+
+
+
